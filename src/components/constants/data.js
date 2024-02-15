@@ -105,22 +105,6 @@ export const events = [
 		link: "http://cbitosc.github.io",
 		status: "Coming Soon",
 	},
-	{
-		id: "event-4",
-		title: "Cascade Arcade",
-		description: [
-			`
-			An open-sourced event for all the design and UI/UX
-			enthusiasts of the college community, who will
-			compete against each other to create CSS templates
-			that match the specified pattern.
-         `,
-		],
-		date:'24th February 2024',
-		participation: "Individual Event",
-		link: "http://cbitosc.github.io",
-		status: "Coming Soon",
-	},
 ];
 
 export const faqs = [
