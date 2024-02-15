@@ -1,0 +1,336 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+/* 
+    // please note that this header is no longer in use and is
+    // replaced by Navbar.jsx because it was easier to implement using
+    //javascript and tailwindcss */
+backdrop-filter: blur( 14px );
+-webkit-backdrop-filter: blur( 4px );
+
+
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+}
+
+.cosclogo img{
+    height: 70px;
+    padding: 10px;
+}
+
+.cosclogo{
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+.nav__wrapper{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.logo img{
+    width: 5rem;
+    height: 5rem;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    column-gap: 2.7rem;
+    margin-bottom: 0;
+}
+
+.nav__item a{
+    color: #fff !important;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+.nav__icons{
+    display: flex;
+    align-items: center;
+    column-gap: 1.2rem;
+
+}
+
+.nav__icons span i{
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.cart__icon, .fav__icon{
+    position: relative;
+}
+
+.prof__icon i {
+    font-size: 1.5rem !important;
+}
+
+.badge{
+    position: absolute;
+    top: 52%;
+    right: -20%;
+    width: 15px;
+    height: 15px;
+    content: '';
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    font-weight: 600;
+    z-index: 10;
+
+}
+
+.nav__icons .profile img{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+}
+
+.nav__icons .profile{
+    position: relative;
+    z-index: 9;
+}
+
+.nav__icons .profile .profile__actions{
+    position: absolute;
+    top: 100%;
+    left: 150;
+    width: 150px;
+    z-index: 10;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: var(--hero-bg);
+    line-height: 30px;
+    display: none;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+}
+
+.show__profileActions{
+    display: block !important;
+}
+
+.mobile__menu{
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    display: none;
+}
+
+.nav__active{
+    font-weight: 700 !important;
+    color: #000 !important;
+}
+@media only screen and (min-width: 769px){
+    #menuToggle ul{
+        display: none;
+    }
+    #menuToggle input{
+        display: none;
+    }
+}
+@media only screen and (max-width:768px) {
+    #menuToggle
+    {
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+    }
+    #menuToggle a
+    {
+    text-decoration: none;
+    color: #232323;
+    
+    transition: color 0.3s ease;
+    }
+
+    #menuToggle a:hover
+    {
+    color: tomato;
+    }
+
+
+    #menuToggle input
+    {
+    display: block;
+    width: 40px;
+    height: 32px;
+    right: 10pt;
+    position: absolute;
+    
+    cursor: pointer;
+    
+    opacity: 0;
+    z-index: 2; 
+    
+    -webkit-touch-callout: none;
+    }
+    #menuToggle span
+    {
+        background: white;
+        width:33px;
+        right: 10pt;
+        margin-top: 2px;
+        cursor: pointer;
+        border: none;
+        display: flex;
+        flex-direction: column;
+    position: relative;
+    display: block;
+    height: 4px;
+    float: right;
+    clear: right;
+    
+    background: #cdcdcd;
+    border-radius: 3px;
+    
+    z-index: 1;
+    
+    transform-origin: 4px 0px;
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+    }
+
+    #menuToggle span:first-child
+    {
+    transform-origin: 0% 0%;
+    }
+
+    #menuToggle span:nth-last-child(2)
+    {
+    transform-origin: 0% 100%;
+    }
+    #menuToggle input:checked ~ span
+    {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+    }
+    #menuToggle input:checked ~ span:nth-last-child(3)
+    {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    #menuToggle input:checked ~ span:nth-last-child(2)
+    {
+    transform: rotate(-45deg) translate(0, -1px);
+    }
+    #menu
+    {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    
+    background: black;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(+100%, 0);
+    display: none;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+
+    #menu li
+    {
+    padding: 10px 0;
+    font-size: 22px;
+    }
+    #menuToggle input:checked ~ ul
+    {
+    display: block;
+    }
+    .navigation{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.399);
+        z-index: 9999;
+        display: none;
+
+    }
+
+    .menu{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 250px;
+        height: 100%;
+        background: black;
+        z-index: 9999;
+        flex-direction: column;
+        align-items: center;
+
+
+    }   
+
+    .mobile__menu span i{
+        font-size: 1.1rem !important;
+    }
+
+    .logo img{
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .fav__icoon i , .cart__icon i  {
+        font-size: 1.2rem !important;
+
+    }
+
+
+    .nav__icons span img{
+        width: 1.4rem;
+        height: 1.4rem;
+
+    } 
+
+    .header{
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+    }
+
+    .cosclogo img{
+        height: 60px;
+        padding: 10px;
+    }
+}
+

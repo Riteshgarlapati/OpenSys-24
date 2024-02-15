@@ -1,0 +1,334 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.footerbox {
+	width: 70%;
+}
+
+footer {
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	border-radius: 10px;
+}
+
+.footero {
+	padding-top: 60px;
+	padding-bottom: 30px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer__text {
+	line-height: 30px;
+}
+
+.footer__quick-links ul li {
+	background: transparent !important;
+}
+
+.quick__links-title {
+	margin-bottom: 20px;
+	font-size: 1.1rem;
+}
+
+.footer__contact li span {
+	font-size: 1.2rem;
+}
+
+.footer__contact li p {
+	font-size: 9.9rem;
+}
+
+.footer__copyright {
+	font-size: 0.9rem;
+	margin-top: 50px;
+	text-align: center;
+}
+
+.socialp {
+	font-size: 30px;
+}
+.socialp:hover {
+	color: var(--primary-color);
+}
+.socialp i:hover {
+	color: var(--primary-color);
+}
+
+.socialp i {
+	margin: 0px 20px;
+}
+
+/* Adjust margins for specific icons */
+.one,
+.two,
+.three,
+.four {
+	display: inline-block; /* Ensure icons appear on the same line */
+}
+
+/* Left-align the text within the left block's paragraphs */
+.socialp .loc p {
+	text-align: center;
+	margin-right: 30px;
+}
+.socialp .loc {
+	display: flex;
+	justify-content: center; /* Center the block horizontally */
+	margin-left: 0; /* Reset any existing margin */
+}
+/* Center the left block */
+.socialp .vis {
+	text-align: center;
+}
+.socialp .vis {
+	display: flex;
+	justify-content: center; /* Center the left block horizontally */
+	margin-left: 50px;
+	margin-right: 30px; /* Reset any existing margin */
+}
+.socialp .con {
+	text-align: center;
+	margin-left: 60px;
+}
+.yo {
+	font-size: 15px;
+}
+
+.sm p {
+	font-size: 15px;
+}
+
+.socialp .yo {
+	text-align: left;
+	margin-left: 20 px;
+}
+
+/* .socialp a:hover {
+	text-decoration: underline;
+} */
+
+/* Add a border around the contact block */
+/* Add a white border around the contact block */
+
+/* Add border around social media icons */
+
+.socialp .one i,
+.socialp .two,
+.socialp .three i,
+.socialp .four i {
+	display: inline-block;
+}
+
+.socialp a {
+	transition: 0.2s;
+}
+
+.socialp i::before,
+.socialp a svg {
+	padding-bottom: 5px;
+	border-bottom: #f1c40f 2px dashed;
+	transition: 0.1s ease;
+}
+
+.socialp i:hover::before,
+.socialp a:has(svg):hover {
+	color: #f1c40f;
+	border-bottom: #f1c40f 2px dashed;
+}
+
+.socialp .three {
+	margin-right: 5px; /* Reduce the right margin for the Facebook icon */
+}
+.socialp .two {
+	margin-left: 25px;
+	margin-right: 25px;
+}
+.socialp .icon-container {
+	display: flex;
+	max-width: fit-content; /* Ensure the container only takes up as much width as necessary */
+	margin: auto;
+	align-items: center; /* Center the icons vertically */
+	border: 2px solid white; /* Add border to create the white box */
+	padding: 10px; /* Add padding to create space between the icons and the border */
+	border-radius: 5px; /* Optional: Add border-radius for rounded corners */
+}
+
+/* Add border around the container of social media icons */
+/* Underline all headings */
+/* Underline specific headings */
+/* Underline Contact Information with a fancy effect */
+/* Colored underline for CONTACT INFORMATION heading */
+/* Glowing underline for CONTACT INFORMATION heading */
+
+/* Glowing underline for CONTACT INFORMATION heading */
+
+/* Glowing underline for CONTACT INFORMATION heading */
+/* Glowing underline for CONTACT INFORMATION heading */
+.socialp .oo {
+	position: relative; /* Establish positioning context for pseudo-element */
+	text-decoration: none; /* Remove default underline */
+}
+
+.socialp .oo::after {
+	content: ""; /* Add content for pseudo-element */
+	position: absolute; /* Position the pseudo-element relative to its parent */
+	left: 0; /* Align to the left */
+	bottom: -2px; /* Position slightly below the text */
+	width: 100%; /* Full width */
+	height: 2px; /* Height of the underline */
+	background-color: gold; /* Color of the underline */
+	animation: glowing 1.5s infinite alternate; /* Apply glowing animation */
+}
+
+.alic {
+	display: flex;
+	flex-direction: row;
+}
+
+.boxo {
+	height: 200px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.cosclogofooter img {
+	height: 60px !important;
+	width: auto !important;
+	margin: 20px;
+}
+
+.cosclogofooter {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.socialhandles {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.socialhandles i {
+	font-size: 25px;
+	color: black !important;
+}
+
+.linko:hover {
+	color: #f1c40f !important;
+}
+
+.socialround {
+	padding: 3px;
+	border: 1px solid #fff;
+	border-radius: 99px;
+	width: 45px;
+	margin: 20px 5px;
+	background-color: #fff;
+	--grad-start: #ffffff;
+	--grad-end: #ffffff;
+	background: linear-gradient(90deg, var(--grad-start), var(--grad-end));
+	transition-property: --grad-end, --grad-end;
+	transition-duration: 0.5s;
+}
+
+.socialround svg {
+	padding: 7px;
+}
+
+.socialround.ig:hover {
+	--grad-start: rgb(221 45 120);
+	--grad-end: rgb(116 68 186);
+	color: #fff !important;
+}
+
+.socialround.fb:hover {
+	--grad-start: rgb(8 102 255);
+	--grad-end: rgb(5 67 167);
+}
+
+.socialround.x:hover {
+	--grad-start: #242526;
+	--grad-end: #242526;
+	color: white;
+}
+
+.socialround.li:hover {
+	--grad-start: rgb(0 115 178);
+	--grad-end: rgb(1 91 140);
+}
+
+.socialround:hover i {
+	color: #fff !important;
+}
+
+/* Define glowing animation */
+@keyframes glowing {
+	0% {
+		opacity: 0.5; /* Initial opacity */
+		box-shadow: 0 0 10px 2px gold; /* Shadow effect */
+	}
+	100% {
+		opacity: 0.8; /* Final opacity */
+		box-shadow: 0 0 20px 5px gold; /* Increased intensity and spread of the glow */
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.footer__quick-links ul li {
+		margin-bottom: 10px;
+	}
+	.footer__contact li {
+		margin-bottom: 10px;
+	}
+	.socialp .loc p {
+		margin-right: 0;
+	}
+	.socialp .vis {
+		margin-left: 0;
+	}
+	.socialp .con {
+		margin-left: 0;
+	}
+	.socialp .yo {
+		margin-left: 0;
+	}
+	.socialp .icon-container {
+		margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.socialp .loc {
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	.alic {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 768px) {
+	.loc {
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+@media (max-width: 768px) {
+	#contactdiv {
+		margin-left: 10px;
+	}
+}
