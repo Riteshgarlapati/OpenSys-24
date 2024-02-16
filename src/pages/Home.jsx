@@ -259,12 +259,12 @@ const Home = () => {
 				</motion.div>
 				<motion.div
 					className="neomorphism"
-					ref={refNeo3}
+					ref={refNeo1}
 					variants={sectionVariant}
-					animate={inViewNeo3 ? "visible" : "hidden"}
+					animate={inViewNeo1 ? "visible" : "hidden"}
 				>
 					<div className="text-white" style={{ width: "100%" }}>
-						<div id="gitimagedesktop" className=" absolute top-3">
+						<div id="gitimagedesktop">
 							<img
 								className="github"
 								style={{ height: "auto" }}
@@ -293,7 +293,7 @@ const Home = () => {
 								className="buy__button mt-40"
 							>
 								<a
-									href={`${event3.link}`}
+									href={`${event1.link}`}
 									target="_blank"
 									style={{ lineHeight: "24px" }}
 									className="text-[16px]"
