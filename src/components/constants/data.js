@@ -117,11 +117,6 @@ export const faqs = [
 		id: "faq-4",
 		question: "When do the events begin?",
 		answer: "The events take place over two days, on February 26 and February 27.",
-	},
-	{
-		id: "faq-5",
-		question: "Eligibility for Participation Certificates",
-		answer: "All students who register and participate in the event are eligible for the participation certificates. The winners stand a chance to win exciting prizes!",
-	},
+	}
 ];
 
