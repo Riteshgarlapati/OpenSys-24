@@ -31,20 +31,20 @@ const Footer = () => {
 									</h2>
 									<div className="events text-gold">
 										<a
-											className="m-1 text-white linko"
+											className="m-1 text-blue-400 linko"
 											href="https://cbitosc.github.io"
 										>
 											{" "}
 											Our Website
 										</a>
 										<a
-											className="m-1 text-white linko"
+											className="m-1 text-blue-400 linko"
 											href="https://cbitosc.github.io/hacktoberfest22/"
 										>
 											HactoberFest'23
 										</a>
 										<a
-											className="m-1 text-white linko"
+											className="m-1 text-blue-400 linko"
 											href="https://cbit.ac.in"
 										>
 											CBIT

@@ -120,7 +120,7 @@ export const faqs = [
 	},
 	{
 		id: "faq-5",
-		question: "Eligibility for Merit and Participation Certificates",
+		question: "Eligibility for Participation Certificates",
 		answer: "All students who register and participate in the event are eligible for the participation certificates. The winners stand a chance to win exciting prizes!",
 	},
 ];

@@ -8,7 +8,7 @@ import animationData from "../assets/lottie/Animation - 1707063924246.json";
 import Lottie from "react-lottie";
 import github from "../assets/images/gitcrypting.png";
 import decipher from "../assets/images/deciphering.png"
-import cascade from "../assets/images/odessey.png";
+import odessey from "../assets/images/odessey.png";
 import Faqs from "../components/FAQs/Faqs";
 import { events } from "../components/constants/data";
 import { aboutdata } from "../components/constants/data";
@@ -226,38 +226,58 @@ const Home = () => {
 
 				<motion.div
 					className="neomorphism"
-					ref={refNeo2}
+					ref={refNeo1}
 					variants={sectionVariant}
-					animate={inViewNeo2 ? "visible" : "hidden"}
+					animate={inViewNeo1 ? "visible" : "hidden"}
 				>
-					<div>
-						<img className="cascade" src={cascade} alt="" />
+					<div id="gitimage">
+						<img className="github" src={decipher} alt="" />
 					</div>
-					<div
-						style={{ lineHeight: "24px" }}
-						className="text-3xl m-6"
-					>
-						<h1 className="font-semibold pb-4">{event3.title}</h1>
-						<p>{event3.description}</p>
-						<div className="display-flex icon-text py-2">
-							<i className="ri-user-3-fill"></i>
-							<p>Participation: {event3.participation}</p>
+					<div className="text-white" style={{ width: "100%" }}>
+						<div id="gitimagedesktop">
+							<img
+								className="github"
+								style={{ height: "auto" }}
+								src={decipher}
+								alt="decipher"
+							/>
 						</div>
-						<div className="display-flex icon-text">
-							<i className="ri-calendar-todo-fill"></i>
-							<p>Date: {event3.date}</p>
-						</div>
-						
-						<motion.button
-							id="event3register"
-							className="buy__button mt-40 mb-40 "
+						<div
+							className="text-3xl m-6 "
+							style={{ lineHeight: "24px" }}
 						>
-							<a href={`${event3.link}`} target="_blank" className="text-[16px]">
-								{event3.status}
-							</a>
-						</motion.button>
+							<h1 className="font-semibold pb-4">
+								{event3.title}
+							</h1>
+							<p>{event3.description}</p>
+							<div className="display-flex icon-text">
+								<i className="ri-team-fill"></i>
+								<p>Participation: {event3.participation}</p>
+							</div>
+							<div className="display-flex icon-text">
+								<i className="ri-calendar-todo-fill"></i>
+								<p>Date: {event3.date}</p>
+							</div>
+							<motion.button
+								id="event1register"
+								className="buy__button mt-40"
+							>
+								<a
+									href={`${event3.link}`}
+									target="_blank"
+									style={{ lineHeight: "24px" }}
+									className="text-[16px]"
+								>
+									{event3.status}
+								</a>
+							</motion.button>
+						</div>
 					</div>
+					{/* <div id="gitimage">
+						<img className="github" src={decipher} alt="" />
+					</div> */}
 				</motion.div>
+
 				<motion.div
 					className="neomorphism"
 					ref={refNeo1}
@@ -269,7 +289,7 @@ const Home = () => {
 							<img
 								className="github"
 								style={{ height: "auto" }}
-								src={decipher}
+								src={odessey}
 								alt=""
 							/>
 						</div>
@@ -294,7 +314,7 @@ const Home = () => {
 								className="buy__button mt-40"
 							>
 								<a
-									href={`${event1.link}`}
+									href={`${event2.link}`}
 									target="_blank"
 									style={{ lineHeight: "24px" }}
 									className="text-[16px]"
@@ -305,9 +325,11 @@ const Home = () => {
 						</div>
 					</div>
 					<div id="gitimage">
-						<img className="github" src={cascade} alt="" />
+						<img className="github" src={odessey} alt="" />
 					</div>
 				</motion.div>
+
+				
 				
 			</motion.section>
 
