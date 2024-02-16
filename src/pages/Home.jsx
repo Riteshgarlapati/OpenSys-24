@@ -6,7 +6,7 @@ import "../styles/home.css";
 import { Container, Row, Col } from "reactstrap";
 import animationData from "../assets/lottie/Animation - 1707063924246.json";
 import Lottie from "react-lottie";
-import github from "../assets/images/4695723.png";
+import github from "../assets/images/GitHub-Mark.png";
 import cascade from "../assets/images/download.png";
 import Faqs from "../components/FAQs/Faqs";
 import { events } from "../components/constants/data";
@@ -30,7 +30,6 @@ const Home = () => {
 	const event1 = events.find((item) => item.id === "event-1");
 	const event2 = events.find((item) => item.id === "event-2");
 	const event3 = events.find((item) => item.id === "event-3");
-	const event4 = events.find((item) => item.id === "event-4");
 	const aboutpage = aboutdata.find((item) => item.id === "about-1");
 	const homedata = homepage.find((item) => item.id === "home");
 
@@ -210,6 +209,7 @@ const Home = () => {
 							>
 								<a
 									href={`${event1.link}`}
+									target="_blank"
 									style={{ lineHeight: "24px" }}
 									className="text-[16px]"
 								>
@@ -246,23 +246,12 @@ const Home = () => {
 							<i className="ri-calendar-todo-fill"></i>
 							<p>Date: {event2.date}</p>
 						</div>
-						<div className="display-flex icon-text py-2">
-							<i className="ri-link"></i>
-							<p>
-								Reference Link:{" "}
-								<a
-									className="border-spacing-2 border-b-2 border-b-yellow-400 text-yellow-400 hover:border-b-blue-400 hover:text-blue-400 transition duration-300"
-									href="https://cssbattle.dev/"
-								>
-									CSS Battle
-								</a>
-							</p>
-						</div>
+						
 						<motion.button
 							id="event2register"
 							className="buy__button mt-40 mb-40 "
 						>
-							<a href={`${event2.link}`} className="text-[16px]">
+							<a href={`${event2.link}`} target="_blank" className="text-[16px]">
 								{event2.status}
 							</a>
 						</motion.button>
@@ -275,7 +264,7 @@ const Home = () => {
 					animate={inViewNeo3 ? "visible" : "hidden"}
 				>
 					<div className="text-white" style={{ width: "100%" }}>
-						<div id="gitimagedesktop">
+						<div id="gitimagedesktop" className=" absolute top-3">
 							<img
 								className="github"
 								style={{ height: "auto" }}
@@ -305,6 +294,7 @@ const Home = () => {
 							>
 								<a
 									href={`${event3.link}`}
+									target="_blank"
 									style={{ lineHeight: "24px" }}
 									className="text-[16px]"
 								>
@@ -317,51 +307,7 @@ const Home = () => {
 						<img className="github" src={github} alt="" />
 					</div>
 				</motion.div>
-				<motion.div
-					className="neomorphism"
-					ref={refNeo4}
-					variants={sectionVariant}
-					animate={inViewNeo4 ? "visible" : "hidden"}
-				>
-					<div>
-						<img className="cascade" src={cascade} alt="" />
-					</div>
-					<div
-						style={{ lineHeight: "24px" }}
-						className="text-3xl m-6"
-					>
-						<h1 className="font-semibold pb-4">{event4.title}</h1>
-						<p>{event4.description}</p>
-						<div className="display-flex icon-text py-2">
-							<i className="ri-user-3-fill"></i>
-							<p>Participation: {event4.participation}</p>
-						</div>
-						<div className="display-flex icon-text">
-							<i className="ri-calendar-todo-fill"></i>
-							<p>Date: {event4.date}</p>
-						</div>
-						<div className="display-flex icon-text py-2">
-							<i className="ri-link"></i>
-							<p>
-								Reference Link:{" "}
-								<a
-									className="border-spacing-2 border-b-2 border-b-yellow-400 text-yellow-400 hover:border-b-blue-400 hover:text-blue-400 transition duration-300"
-									href="https://cssbattle.dev/"
-								>
-									CSS Battle
-								</a>
-							</p>
-						</div>
-						<motion.button
-							id="event2register"
-							className="buy__button mt-40 mb-40 "
-						>
-							<a href={`${event4.link}`} className="text-[16px]">
-								{event4.status}
-							</a>
-						</motion.button>
-					</div>
-				</motion.div>
+				
 			</motion.section>
 
 			<motion.section
