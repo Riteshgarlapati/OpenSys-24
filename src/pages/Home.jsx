@@ -6,8 +6,9 @@ import "../styles/home.css";
 import { Container, Row, Col } from "reactstrap";
 import animationData from "../assets/lottie/Animation - 1707063924246.json";
 import Lottie from "react-lottie";
-import github from "../assets/images/GitHub-Mark.png";
-import cascade from "../assets/images/download.png";
+import github from "../assets/images/gitcrypting.png";
+import decipher from "../assets/images/deciphering.png"
+import cascade from "../assets/images/odessey.png";
 import Faqs from "../components/FAQs/Faqs";
 import { events } from "../components/constants/data";
 import { aboutdata } from "../components/constants/data";
@@ -236,23 +237,23 @@ const Home = () => {
 						style={{ lineHeight: "24px" }}
 						className="text-3xl m-6"
 					>
-						<h1 className="font-semibold pb-4">{event2.title}</h1>
-						<p>{event2.description}</p>
+						<h1 className="font-semibold pb-4">{event3.title}</h1>
+						<p>{event3.description}</p>
 						<div className="display-flex icon-text py-2">
 							<i className="ri-user-3-fill"></i>
-							<p>Participation: {event2.participation}</p>
+							<p>Participation: {event3.participation}</p>
 						</div>
 						<div className="display-flex icon-text">
 							<i className="ri-calendar-todo-fill"></i>
-							<p>Date: {event2.date}</p>
+							<p>Date: {event3.date}</p>
 						</div>
 						
 						<motion.button
-							id="event2register"
+							id="event3register"
 							className="buy__button mt-40 mb-40 "
 						>
-							<a href={`${event2.link}`} target="_blank" className="text-[16px]">
-								{event2.status}
+							<a href={`${event3.link}`} target="_blank" className="text-[16px]">
+								{event3.status}
 							</a>
 						</motion.button>
 					</div>
@@ -268,7 +269,7 @@ const Home = () => {
 							<img
 								className="github"
 								style={{ height: "auto" }}
-								src={github}
+								src={decipher}
 								alt=""
 							/>
 						</div>
@@ -277,16 +278,16 @@ const Home = () => {
 							style={{ lineHeight: "24px" }}
 						>
 							<h1 className="font-semibold pb-4">
-								{event3.title}
+								{event2.title}
 							</h1>
-							<p>{event3.description}</p>
+							<p>{event2.description}</p>
 							<div className="display-flex icon-text">
 								<i className="ri-team-fill"></i>
-								<p>Participation: {event3.participation}</p>
+								<p>Participation: {event2.participation}</p>
 							</div>
 							<div className="display-flex icon-text">
 								<i className="ri-calendar-todo-fill"></i>
-								<p>Date: {event3.date}</p>
+								<p>Date: {event2.date}</p>
 							</div>
 							<motion.button
 								id="event1register"
@@ -298,13 +299,13 @@ const Home = () => {
 									style={{ lineHeight: "24px" }}
 									className="text-[16px]"
 								>
-									{event3.status}
+									{event2.status}
 								</a>
 							</motion.button>
 						</div>
 					</div>
 					<div id="gitimage">
-						<img className="github" src={github} alt="" />
+						<img className="github" src={cascade} alt="" />
 					</div>
 				</motion.div>
 				
@@ -392,7 +393,7 @@ const Home = () => {
 										Contact
 									</h3>
 									<p className="font-bold">
-										Sai Kiran:+91 7995166572
+										Sai Kiran: +91 7995166572
 									</p>
 									<p className="font-bold mt-2">
 										Akil: +91 9442621187

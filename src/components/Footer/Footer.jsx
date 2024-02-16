@@ -29,7 +29,7 @@ const Footer = () => {
 									<h2 className="font-bold mb-3">
 										Related links:
 									</h2>
-									<div className="events">
+									<div className="events text-gold">
 										<a
 											className="m-1 text-white linko"
 											href="https://cbitosc.github.io"
