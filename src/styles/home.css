@@ -92,7 +92,7 @@
 
 .where_when i {
     font-size: 30px;
-    margin-right: 10px;
+    margin-right: 2px;
 }
 
 .mt-40 {
@@ -118,8 +118,12 @@
     padding: 40px;
 }
 
+.aboutdescription h5 {
+    padding-right: 40px;
+}
+
 .pr40 p {
-    padding: 0px 0px 0px 80px;
+    padding: 0px 40px 0px 80px;
 }
 
 .hero__section h2 {
@@ -487,9 +491,9 @@
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 384px) {
     .h1events {
-        margin-top: 180px;
+        margin-top: 160px;
     }
 }
 
